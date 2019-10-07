@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Queue</title>
+</head>
+<script>
+window.onload = function () {
+    document.querySelector("#test-queue").addEventListener("click", testQueue);
+};
+async function testQueue() {
+    console.log("test queue");
+    fetch('job/', {method: 'POST'});
+}
+</script>
+<body>
+ <div>
+	<h2>Test Queue</h2>
+	<a href='#' id="test-queue" >Test Queue</a>
+ </div>
+</body>
+</html>
